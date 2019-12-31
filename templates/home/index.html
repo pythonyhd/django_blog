@@ -1,0 +1,664 @@
+{% extends 'home/base.html' %}
+
+{#{% block title %}KingLife{% endblock %}#}
+{% load staticfiles %}
+ <!-- 登录样式 -->
+{% block custom_css %}
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+
+    <main>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8">
+
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+
+
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class=""></li>
+
+
+
+        <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+
+
+
+        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+
+
+
+        <li data-target="#carouselExampleIndicators" data-slide-to="3" class=""></li>
+
+
+    </ol>
+    <div class="carousel-inner">
+
+
+        <div class="carousel-item">
+
+                <a href="/article/docker-rebuild/">
+                    <img class="w-100" src="/cdn/article/190122/izone-docker.jpg" alt="容器化部署博客（3）—— 5分钟完成项目迁移">
+                </a>
+            </div>
+
+
+            <div class="carousel-item active">
+
+                <a href="/article/set-up-django-with-nginx-and-gunicorn/">
+                    <img class="w-100" src="/cdn/article/180418/bsblog.png" alt="在 Linux 服务器上使用 Nginx + Gunicorn 部署 Django 项目的正确姿势">
+                </a>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <a href="/article/virtualenv-for-python/">
+                    <img class="w-100" src="/cdn/article/080414/virtualenv.png" alt="Python虚拟环境Virtualenv分别在Windows和Linux上的安装和使用">
+                </a>
+            </div>
+
+
+            <div class="carousel-item">
+
+                <a href="/article/jiandan-meizi-spider/">
+                    <img class="w-100" src="/cdn/article/180415/jiandan.png" alt="煎蛋网妹子图爬虫">
+                </a>
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+            <div class="text-secondary font-weight-bold py-2 f-15 choice">
+
+
+                <a class="pb-2 active" href="/">
+                    <i class="fa fa-bars mr-1"></i>时间排序</a>
+                <a class="pb-2 ml-4 " href="/hot/">
+                    <i class="fa fa-fire mr-1"></i>热度排序</a>
+            </div>
+
+
+<div class="summary-list">
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/markdown-editor/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/191220/Snipaste_2019-12-20_14-34-32.png" alt="博客添加 markdown 在线编辑器工具">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>1&nbsp;周，3天前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/markdown-editor/" target="_blank">博客添加 markdown 在线编辑器工具</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">自从博客项目上线以来，经常会有用到我博客项目的人问我后台编辑博文为啥没有编辑器，博主是怎么编辑博文的？我每次的回答基本都是说随便找个本地的 markdown 编辑器把文章写好然后复制到后台即可。而我自己也一直是这样做的，但是今天这篇文章就不同，这篇文章使用的是</p>
+            <p class="d-block d-sm-none mb-2 f-15">自从博客项目上线以来，经常会有用到我博客项目的人问我后台编辑博文为啥没有编辑器，博主是怎么编辑博文的？我每次的回答基本都是说随便</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/Front-end/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Web 前端</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>111</span>
+                <a href="/article/markdown-editor/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>8</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/theme-change/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/191125/css-cookies.png" alt="博客添加暗色主题切换功能，从主题切换聊聊前后端cookies的使用">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>1月前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/theme-change/" target="_blank">博客添加暗色主题切换功能，从主题切换聊聊前后端cookies的使用</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">经常上 V2EX 的人应该知道，前一段时间该论坛上线了暗色主题切换功能，当天就获得一致好评。也就是在当天，我给自己的博客 github 上面提交了一个 issue，也就是需要给博客添加一套暗色主题并支持主题切换。但是人都是有拖延症的，这一拖，两个月就过去了，我</p>
+            <p class="d-block d-sm-none mb-2 f-15">经常上 V2EX 的人应该知道，前一段时间该论坛上线了暗色主题切换功能，当天就获得一致好评。也就是在当天，我给自己的博客 git</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/Front-end/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Web 前端</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>340</span>
+                <a href="/article/theme-change/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>6</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/yaml_and_jinja2/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/191106/yaml_jinja.png" alt="Python 模板渲染库 yaml 和 jinja2 的实战经验分享">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>1月，3&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/yaml_and_jinja2/" target="_blank">Python 模板渲染库 yaml 和 jinja2 的实战经验分享</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">之前公司的项目部署主要使用的是 ansible 编排，说到 ansible 就不得不提到强大的 jinja 语法了。而后来公司又让各个服务把部署方式改成 SDK 安装的方式，这个转变就引发了一些重复利用文件的问题，最后的解决办法就是使用 yaml 和 jinj</p>
+            <p class="d-block d-sm-none mb-2 f-15">之前公司的项目部署主要使用的是 ansible 编排，说到 ansible 就不得不提到强大的 jinja 语法了。而后来公司又</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/hello-python/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Python 基础</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>507</span>
+                <a href="/article/yaml_and_jinja2/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>9</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/python-shell-cmd/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/191029/python_shell.png" alt="使用 python 执行 shell 命令的几种常用方式">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>2月，1&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/python-shell-cmd/" target="_blank">使用 python 执行 shell 命令的几种常用方式</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">在使用 Python 编写自动化脚本的时候，难免会需要执行一些基本的 shell 命令，而 Python 执行 shell 命令的方式有好几种，如果根据需要选择最适合的方式显得非常重要，这篇文章就来总结和对比一下几种常见的 Python 运行 shell 命令</p>
+            <p class="d-block d-sm-none mb-2 f-15">在使用 Python 编写自动化脚本的时候，难免会需要执行一些基本的 shell 命令，而 Python 执行 shell 命令</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/hello-python/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Python 基础</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>534</span>
+                <a href="/article/python-shell-cmd/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>4</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/django2/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/190919/django.png" alt="博客将 Django 1.11+ 升级到 Django 2.2+ 遇到的问题及规避方法">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>3月，1&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/django2/" target="_blank">博客将 Django 1.11+ 升级到 Django 2.2+ 遇到的问题及规避方法</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">之前就有人一直催我把博客的 Django 升级到 Django 2.0 以上，但是我一直懒得升级，因为我早就看过 Django 2.x 版本和 1.11.x 版本，其实没有太多的不同，所以没有找到需要升级的必要。但是，秉着向新技术看齐的态度，我还是花了些时间（</p>
+            <p class="d-block d-sm-none mb-2 f-15">之前就有人一直催我把博客的 Django 升级到 Django 2.0 以上，但是我一直懒得升级，因为我早就看过 Django </p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/Python-Web-development/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Python Web开发</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>932</span>
+                <a href="/article/django2/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>20</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/ansible-and-docker/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/190913/ansible.png" alt="使用 Ansible 工具批量操作虚拟机集群，自动化安装 Docker">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>3月，2&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/ansible-and-docker/" target="_blank">使用 Ansible 工具批量操作虚拟机集群，自动化安装 Docker</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">ansible 是一个 Python 写的自动化工具，这个工具可以实现集群自动化管理，然后进行一些常用的运维操作。现在的公司很多都是使用的集群部署服务，少则几台虚拟机，多则几百上千台虚拟机，有的时候需要对一个集群或者多个集群集中进行运维操作，那么这个时候，an</p>
+            <p class="d-block d-sm-none mb-2 f-15">ansible 是一个 Python 写的自动化工具，这个工具可以实现集群自动化管理，然后进行一些常用的运维操作。现在的公司很多</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/Operation-and-maintenance-automation/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>自动化</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>720</span>
+                <a href="/article/ansible-and-docker/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>2</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/Jenkins-Pipeline/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/190710/jenkins.png" alt="【Jenkins 插件】Jenkins Pipeline 流水线插件的使用，Vue 项目自动化构建和部署实战">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>3月，4&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/Jenkins-Pipeline/" target="_blank">【Jenkins 插件】Jenkins Pipeline 流水线插件的使用，Vue 项目自动化构建和部署实战</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">最近一直在研究 Jenkins 的流水线插件 Pipeline，既然是研究，自然就不是为了掌握基本用法了，而是高级用法。目前研究的成果还是挺不过的，有很多想要实现的功能都已经通过插件自带的语法完成，后续会单独开一个系列来分享更多高级语法的使用，而这边文章就来分</p>
+            <p class="d-block d-sm-none mb-2 f-15">最近一直在研究 Jenkins 的流水线插件 Pipeline，既然是研究，自然就不是为了掌握基本用法了，而是高级用法。目前研究</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/ci-cd/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>CI/CD</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>866</span>
+                <a href="/article/Jenkins-Pipeline/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>5</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/django-ajax/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/190823/ajax.png" alt="Django 中使用 ajax 请求的正确姿势">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>4月，1&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/django-ajax/" target="_blank">Django 中使用 ajax 请求的正确姿势</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">我的博客在导航栏中有一个在线工具跳转，博客中提供了一些比较实用的在线工具，最近两天又添加了一个在线工具，作用是可以查询 docker 官方镜像仓库中指定镜像的版本信息，虽然之前写在线工具的时候就已经掌握了 django + jQuery ajax 的用法，但经</p>
+            <p class="d-block d-sm-none mb-2 f-15">我的博客在导航栏中有一个在线工具跳转，博客中提供了一些比较实用的在线工具，最近两天又添加了一个在线工具，作用是可以查询 dock</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/Python-Web-development/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Python Web开发</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>1154</span>
+                <a href="/article/django-ajax/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>8</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/dockerfile-multi-stage/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/181223/docker.jpg" alt="Dockerfile 中的 multi-stage 特性，Vue 项目多阶段构建实战">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>4月，2&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/dockerfile-multi-stage/" target="_blank">Dockerfile 中的 multi-stage 特性，Vue 项目多阶段构建实战</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">最近在写一个 Vue 项目，并已经实现 Docker 镜像构建和容器化部署，之前也分享过一篇文章关于 Vue 项目的静态资源打包和镜像构建。但是之前在镜像构建之前是需要使用 npm 进行项目打包生产 dist 文件之后才能进行镜像构建，不过最近我在使用 Jen</p>
+            <p class="d-block d-sm-none mb-2 f-15">最近在写一个 Vue 项目，并已经实现 Docker 镜像构建和容器化部署，之前也分享过一篇文章关于 Vue 项目的静态资源打包</p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/docker/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>容器化</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>592</span>
+                <a href="/article/dockerfile-multi-stage/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>0</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="media mb-1 mb-sm-2 p-2 p-lg-3">
+        <div class="align-self-center mr-2 mr-lg-3 w-25 modal-open">
+            <a href="/article/python-spider-sina-weipan-2/" target="_blank">
+                <img class="w-100 article-img" src="/cdn/article/190809/20160426120759_32021.jpeg" alt="分析新浪微盘接口，调用接口爬取周杰伦歌曲">
+            </a>
+        </div>
+        <div class="media-body">
+
+            <div class="text-muted mb-2 f-12">
+
+
+<img class="avatar" src="/media/avatar/2019/07/27/91ef76c6a7efce1b99717f97a851f3deb48f6510.png" alt="Hopetree">
+
+                <span>Hopetree</span>
+                <span><i class="fa fa-calendar-times-o ml-2 mr-1"></i>4月，3&nbsp;周前</span>
+            </div>
+            <h2 class="mt-0 font-weight-bold text-info f-17">
+                <a href="/article/python-spider-sina-weipan-2/" target="_blank">分析新浪微盘接口，调用接口爬取周杰伦歌曲</a>
+            </h2>
+            <p class="d-none d-sm-block mb-2 f-15">之前写了一篇使用 selenium 爬取新浪微盘上面周杰伦的歌曲的文章，当时是因为有个接口的构造方式没有分析出来，所以才使用了 selenium 模拟浏览器进行下载，但是模拟浏览器下载歌曲遗留了一个问题，所以后来自己还是继续分析各个接口，最终把所有接口调通了。</p>
+            <p class="d-block d-sm-none mb-2 f-15">之前写了一篇使用 selenium 爬取新浪微盘上面周杰伦的歌曲的文章，当时是因为有个接口的构造方式没有分析出来，所以才使用了 </p>
+            <div class="text-muted mb-0 f-12">
+                <a class="cate" href="/category/python-crawler/" title="查看当前分类下更多文章">
+                    <i class="fa fa-book mr-1"></i>Python 爬虫</a>
+                <span><i class="fa fa-eye ml-2 mr-1"></i>803</span>
+                <a href="/article/python-spider-sina-weipan-2/#comment-block" target="_blank" title="查看文章评论">
+                    <i class="fa fa-comments ml-2 mr-1"></i>7</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+            <div class="text-center mt-2 mt-sm-1 mt-md-0 mb-3 f-16">
+
+    <span class="text-secondary" title="当前页已经是首页">上一页</span>
+
+    <span class="mx-2">第&nbsp;1&nbsp;/&nbsp;4&nbsp;页</span>
+
+    <a class="text-success" href="?page=2">下一页</a>
+
+</div>
+        </div>
+        <div class="col-lg-4">
+
+
+
+<!--个人空间-->
+<div class="card border-0 rounded-0 px-3 mb-2 mb-md-3 d-none d-lg-block" id="home-card">
+    <div class="card-header bg-white px-0">
+        <strong><i class="fa fa-paper-plane mr-2 f-17"></i>个人空间</strong>
+        <img class="float-right" id="theme-img" src="/static/blog/img/toggle-light.png" alt="theme-toggle" title="切换主题">
+    </div>
+    <div class="card-body px-0 pt-3 pb-1">
+        <div class="row text-center">
+            <div class="col">
+                <a href="https://github.com/Hopetree" target="_blank" title="进入博主的Github查看博客源码">
+                    <img style="max-width:40px" alt="博主的github" src="/static/blog/img/github.png">
+                    <p class="mt-2">Github</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/timeline/" target="_blank" title="查看网站建站历程">
+                    <img style="max-width:40px" alt="网站的建站历程" src="/static/blog/img/blog.png">
+                    <p class="mt-2">Timeline</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="/feed/" target="_blank" title="订阅博客">
+                    <img style="max-width:40px" alt="订阅博客RSS" src="/static/blog/img/rss.png">
+                    <p class="mt-2">RSS订阅</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--文章分类-->
+<div class="card border-0 rounded-0 px-3 mb-2 mb-md-3" id="category-card">
+    <div class="card-header bg-white px-0">
+        <strong><i class="fa fa-book mr-2 f-17"></i>文章分类</strong>
+    </div>
+
+    <ul class="list-group list-group-flush f-16">
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/ci-cd/" title="查看【CI/CD】分类下所有文章">CI/CD</a>
+            <span class="badge text-center" title="当前分类下有6篇文章">6</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/linux-notes/" title="查看【Linux 笔记】分类下所有文章">Linux 笔记</a>
+            <span class="badge text-center" title="当前分类下有5篇文章">5</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/Notebook/" title="查看【Notebook】分类下所有文章">Notebook</a>
+            <span class="badge text-center" title="当前分类下有1篇文章">1</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/Python-Web-development/" title="查看【Python Web开发】分类下所有文章">Python Web开发</a>
+            <span class="badge text-center" title="当前分类下有8篇文章">8</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/hello-python/" title="查看【Python 基础】分类下所有文章">Python 基础</a>
+            <span class="badge text-center" title="当前分类下有4篇文章">4</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/python-crawler/" title="查看【Python 爬虫】分类下所有文章">Python 爬虫</a>
+            <span class="badge text-center" title="当前分类下有9篇文章">9</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/Front-end/" title="查看【Web 前端】分类下所有文章">Web 前端</a>
+            <span class="badge text-center" title="当前分类下有2篇文章">2</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/docker/" title="查看【容器化】分类下所有文章">容器化</a>
+            <span class="badge text-center" title="当前分类下有4篇文章">4</span>
+        </li>
+
+        <li class="list-group-item d-flex justify-content-between align-items-center pr-2 py-2">
+            <a class="category-item" href="/category/Operation-and-maintenance-automation/" title="查看【自动化】分类下所有文章">自动化</a>
+            <span class="badge text-center" title="当前分类下有2篇文章">2</span>
+        </li>
+
+    </ul>
+</div>
+<!--标签云-->
+<div class="card border-0 rounded-0 px-3 mb-2 mb-md-3" id="tag-card">
+    <div class="card-header bg-white px-0">
+        <strong><i class="fa fa-tags mr-2 f-17"></i>标&nbsp;签&nbsp;云</strong>
+    </div>
+    <div class="card-body px-0 py-3">
+        <div class="tag-cloud">
+
+
+            <a href="/tag/Virtualenv/" class="tags f-16" id="tag-1" title="【Virtualenv】标签下有3篇文章">Virtualenv</a>
+
+            <a href="/tag/Web-development/" class="tags f-16" id="tag-2" title="【后端开发】标签下有10篇文章">后端开发</a>
+
+            <a href="/tag/python-crawler/" class="tags f-16" id="tag-3" title="【Python爬虫】标签下有8篇文章">Python爬虫</a>
+
+            <a href="/tag/MD5/" class="tags f-16" id="tag-4" title="【MD5加密】标签下有2篇文章">MD5加密</a>
+
+            <a href="/tag/Requests/" class="tags f-16" id="tag-5" title="【Requests】标签下有4篇文章">Requests</a>
+
+            <a href="/tag/threading/" class="tags f-16" id="tag-6" title="【多线程】标签下有4篇文章">多线程</a>
+
+            <a href="/tag/multiprocessing/" class="tags f-16" id="tag-7" title="【多进程】标签下有2篇文章">多进程</a>
+
+            <a href="/tag/Django/" class="tags f-16" id="tag-8" title="【Django】标签下有11篇文章">Django</a>
+
+            <a href="/tag/MySQL/" class="tags f-16" id="tag-9" title="【MySQL】标签下有4篇文章">MySQL</a>
+
+            <a href="/tag/database/" class="tags f-16" id="tag-10" title="【数据库】标签下有2篇文章">数据库</a>
+
+            <a href="/tag/Nginx/" class="tags f-16" id="tag-11" title="【Nginx】标签下有4篇文章">Nginx</a>
+
+            <a href="/tag/Gunicorn/" class="tags f-16" id="tag-12" title="【Gunicorn】标签下有1篇文章">Gunicorn</a>
+
+            <a href="/tag/Redis/" class="tags f-16" id="tag-13" title="【Redis】标签下有2篇文章">Redis</a>
+
+            <a href="/tag/django-redis/" class="tags f-16" id="tag-14" title="【django-redis】标签下有1篇文章">django-redis</a>
+
+            <a href="/tag/cache/" class="tags f-16" id="tag-15" title="【Cache】标签下有1篇文章">Cache</a>
+
+            <a href="/tag/Linux/" class="tags f-16" id="tag-16" title="【Linux】标签下有8篇文章">Linux</a>
+
+            <a href="/tag/crontab/" class="tags f-16" id="tag-17" title="【crontab】标签下有1篇文章">crontab</a>
+
+            <a href="/tag/PhantomJS/" class="tags f-16" id="tag-18" title="【PhantomJS】标签下有1篇文章">PhantomJS</a>
+
+            <a href="/tag/selenium/" class="tags f-16" id="tag-19" title="【Selenium】标签下有2篇文章">Selenium</a>
+
+            <a href="/tag/queue/" class="tags f-16" id="tag-20" title="【Queue】标签下有1篇文章">Queue</a>
+
+            <a href="/tag/configparser/" class="tags f-16" id="tag-21" title="【configparser】标签下有1篇文章">configparser</a>
+
+            <a href="/tag/paramiko/" class="tags f-16" id="tag-22" title="【paramiko】标签下有1篇文章">paramiko</a>
+
+            <a href="/tag/SSH/" class="tags f-16" id="tag-23" title="【SSH】标签下有3篇文章">SSH</a>
+
+            <a href="/tag/shell/" class="tags f-16" id="tag-24" title="【shell】标签下有4篇文章">shell</a>
+
+            <a href="/tag/Scrapy/" class="tags f-16" id="tag-25" title="【Scrapy】标签下有2篇文章">Scrapy</a>
+
+            <a href="/tag/docker/" class="tags f-16" id="tag-26" title="【Docker】标签下有10篇文章">Docker</a>
+
+            <a href="/tag/docker-compose/" class="tags f-16" id="tag-27" title="【docker-compose】标签下有5篇文章">docker-compose</a>
+
+            <a href="/tag/docker-build/" class="tags f-16" id="tag-28" title="【容器化】标签下有8篇文章">容器化</a>
+
+            <a href="/tag/centos/" class="tags f-16" id="tag-29" title="【CentOS】标签下有2篇文章">CentOS</a>
+
+            <a href="/tag/pip/" class="tags f-16" id="tag-30" title="【pip】标签下有1篇文章">pip</a>
+
+            <a href="/tag/argparse/" class="tags f-16" id="tag-31" title="【argparse】标签下有1篇文章">argparse</a>
+
+            <a href="/tag/click/" class="tags f-16" id="tag-32" title="【Click】标签下有1篇文章">Click</a>
+
+            <a href="/tag/OAuth2/" class="tags f-16" id="tag-33" title="【OAuth2.0】标签下有1篇文章">OAuth2.0</a>
+
+            <a href="/tag/django-allauth/" class="tags f-16" id="tag-34" title="【django-allauth】标签下有1篇文章">django-allauth</a>
+
+            <a href="/tag/git/" class="tags f-16" id="tag-35" title="【Git】标签下有2篇文章">Git</a>
+
+            <a href="/tag/ci-cd/" class="tags f-16" id="tag-36" title="【CI/CD】标签下有6篇文章">CI/CD</a>
+
+            <a href="/tag/Jenkins/" class="tags f-16" id="tag-37" title="【Jenkins】标签下有6篇文章">Jenkins</a>
+
+            <a href="/tag/Vue/" class="tags f-16" id="tag-38" title="【Vue.js】标签下有3篇文章">Vue.js</a>
+
+            <a href="/tag/ansible/" class="tags f-16" id="tag-39" title="【Ansible】标签下有1篇文章">Ansible</a>
+
+            <a href="/tag/jinja2/" class="tags f-16" id="tag-40" title="【jinja2】标签下有1篇文章">jinja2</a>
+
+            <a href="/tag/yaml/" class="tags f-16" id="tag-41" title="【YAML】标签下有1篇文章">YAML</a>
+
+            <a href="/tag/Bootstrap/" class="tags f-16" id="tag-42" title="【Bootstrap】标签下有1篇文章">Bootstrap</a>
+
+            <a href="/tag/Cookie/" class="tags f-16" id="tag-43" title="【Cookie】标签下有1篇文章">Cookie</a>
+
+            <a href="/tag/markdown/" class="tags f-16" id="tag-44" title="【markdown】标签下有1篇文章">markdown</a>
+
+        </div>
+    </div>
+</div>
+<!--友链-->
+<div class="d-none d-lg-block">
+    <div class="card border-0 rounded-0 px-3 mb-2 mb-md-3" id="friends-card">
+        <div class="card-header bg-white px-0">
+            <strong><i class="fa fa-link mr-2 f-17"></i>友情链接</strong>
+        </div>
+        <div class="card-body px-0 py-3">
+            <div class="tool-list">
+
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://github.com/Hopetree/izone" title="izone 博客项目的源代码" target="_blank">
+                            博客源码</a>
+                    </div>
+                </div>
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://frostming.com" title="一个基于 Flask 开发的博客" target="_blank">
+                            Frost's Blog</a>
+                    </div>
+                </div>
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://zmrenwu.com" title="Django 博客教程分享者" target="_blank">
+                            追梦人物</a>
+                    </div>
+                </div>
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://www.dusaiphoto.com/" title="Django 搭建的博客，分享博客教程" target="_blank">
+                            杜赛的个人网站</a>
+                    </div>
+                </div>
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://www.jerrycoding.com/" title="Jerry 的个人博客" target="_blank">
+                            Jerry Coding</a>
+                    </div>
+                </div>
+
+                <div class="w-50 float-left text-center mb-2">
+                    <div class="mx-2">
+                        <a href="https://boywithacoin.cn/" title="Stray_Camel的个人技术博客" target="_blank">
+                            Stray_Camel</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</main>
+{% endblock %}
